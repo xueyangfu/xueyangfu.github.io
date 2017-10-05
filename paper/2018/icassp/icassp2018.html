@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head>
+<title>IMAGE ENHANCEMENT VIA LOG-MODIFIED HISTOGRAM EQUALIZATION AND LAPLACIAN PYRAMID</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+</head>
+
+<body leftmargin="40" text="#444444" link="#444444" bgcolor="#FFFFFF">
+
+
+<h2 id="title" class="auto-style1" align="center">IMAGE ENHANCEMENT VIA LOG-MODIFIED HISTOGRAM EQUALIZATION AND LAPLACIAN PYRAMID</h2>
+
+<p class="auto-style7"  align="center">
+Xueyang Fu &nbsp;&nbsp;  Zhiwen Fan  &nbsp;&nbsp; Yue Huang  &nbsp;&nbsp; Xinghao Ding  &nbsp;&nbsp; John Paisley
+</p>
+
+<!-- <p class="auto-style7"  align="center">
+IEEE Transactions on Image Processing (TIP), 2017.
+</p> -->
+
+<p style="text-align: justify;line-height:25px"><strong>Abstract:</strong>  In this paper, a simple yet effective image enhancement algorithm is proposed to improve both 
+global contrast and local details. Firstly, in the classic histogram equalization framework, the global contrast enhancement is achieved by simply modifying the image histogram 
+with logarithmic operation. Due to the character of compression and monotonically increasing of logarithm, the improved histogram equalization can generate naturally looking global 
+enhanced image without introducing visual artifacts. Secondly, to further improve local details, we adopt the Laplacian pyramid to decompose the global enhanced image into several 
+detail layers at different scales. The final result is obtained by adding all pyramid layers with a weighted strategy. Experiments show that our efficient algorithm generates 
+comparable or even better results with state-of-the-art 1D and 2D histogram based methods.
+
+<!-- <p class="auto-style7"  align="center">
+<p><strong>Paper:</strong>
+<a  href="tip2017.pdf" style="color: blue">[pdf]</a>
+</p> -->
+
+<p class="auto-style7"  align="center">
+<p><strong>Matlab code for testing:</strong>
+<a  href="Matlab_code.zip" style="color: blue">[Matlab code]</a>
+</p>
+
+<!-- <p class="auto-style7"  align="center">
+<p><strong>Dataset:</strong> Our rainy image dataset is expanded and can be downloaded at 
+<a  href="../cvpr/cvpr2017.html" style="color: blue">here</a>.
+</p> -->
+
+	<table align="center" border="1" width="830" style="border-width: 0px">
+		<tr>
+			<td align="center"  width="300" style="border-style: none; border-width: medium">
+			<font face="Arial" size="6">input images</font></td>
+			<td align="center"  width="300" style="border-style: none; border-width: medium">
+			<font face="Arial" size="6">our results</font></td>
+		</tr>
+
+		<tr>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/72.jpg" width="400"></font></td>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/72 (2).jpg" width="400"></font></td>
+		</tr>
+		<tr>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/227.jpg" width="400"></font></td>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/227 (2).jpg" width="400"></font></td>
+		</tr>
+				
+		<tr>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/198.jpg" width="400"></font></td>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/198 (2).jpg" width="400"></font></td>
+		</tr>
+		<tr>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/208.jpg" width="400"></font></td>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/208 (2).jpg" width="400"></font></td>
+		</tr>
+		
+		<tr>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/215.jpg" width="400"></font></td>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/215 (2).jpg" width="400"></font></td>
+		</tr>
+		
+
+		<tr>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/155.jpg" width="400"></font></td>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/155 (2).jpg" width="400"></font></td>
+		</tr>
+
+				
+		<tr>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/160.jpg" width="400"></font></td>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/160 (2).jpg" width="400"></font></td>
+		</tr>
+				
+		<tr>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/174.jpg" width="400"></font></td>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/174 (2).jpg" width="400"></font></td>
+		</tr>
+		
+		<tr>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/188.jpg" width="400"></font></td>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/188 (2).jpg" width="400"></font></td>
+		</tr>
+		
+				
+		<tr>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/159.jpg" width="400"></font></td>
+			<td align="center"  style="border-style: none; border-width: medium">
+			<img src="img/159 (2).jpg" width="400"></font></td>
+		</tr>
+		</table>
+
+</body>
+
+
+</html>
