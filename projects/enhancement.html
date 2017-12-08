@@ -1,16 +1,50 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
-
+<!DOCTYPE HTML>
+<html>
 <head>
-<title>IMAGE ENHANCEMENT VIA LOG-MODIFIED HISTOGRAM EQUALIZATION AND LAPLACIAN PYRAMID</title>
+<title>Image enhancement via log-modified histogram equalization and laplacian pyramid</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="../js/jquery.beforeafter-1.4.js"></script>
+<script type="text/javascript">
+$(function(){
+$('#container').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container1').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container2').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container3').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container4').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container5').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container6').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container7').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container8').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container9').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+});
+</script>
+
+<style type="text/css">
+#container {margin-left:auto;margin-right:auto;} #container + div.balinks {margin: 0 auto;}
+#container1 {margin-left:auto;margin-right:auto;} #container1 + div.balinks {margin: 0 auto;}
+#container2 {margin-left:auto;margin-right:auto;} #container2 + div.balinks {margin: 0 auto;}
+#container3 {margin-left:auto;margin-right:auto;} #container3 + div.balinks {margin: 0 auto;}
+#container4 {margin-left:auto;margin-right:auto;} #container4 + div.balinks {margin: 0 auto;}
+#container5 {margin-left:auto;margin-right:auto;} #container5 + div.balinks {margin: 0 auto;}
+#container6 {margin-left:auto;margin-right:auto;} #container6 + div.balinks {margin: 0 auto;}
+#container7 {margin-left:auto;margin-right:auto;} #container7 + div.balinks {margin: 0 auto;}
+#container8 {margin-left:auto;margin-right:auto;} #container8 + div.balinks {margin: 0 auto;}
+#container9 {margin-left:auto;margin-right:auto;} #container9 + div.balinks {margin: 0 auto;}
+</style>
+
 </head>
 
-<body leftmargin="40" text="#444444" link="#444444" bgcolor="#FFFFFF">
+<body leftmargin="40" text="#444444" bgcolor="#FFFFFF">
 
+<div id="top_arrow" style="position: fixed; bottom: 10px; right: 10px;">
+<a href="#title">
+<img src="../js/top_arrow.jpg" style="border: 0pt none ; width: 26px; height: 32px;"/></a>
+</div>
 
-<h2 id="title" class="auto-style1" align="center">IMAGE ENHANCEMENT VIA LOG-MODIFIED HISTOGRAM EQUALIZATION AND LAPLACIAN PYRAMID</h2>
+<h2 id="title" class="auto-style1" align="center">Image enhancement via log-modified histogram equalization and Laplacian pyramid</h2>
 
 <p class="auto-style7"  align="center">
 Xueyang Fu &nbsp;&nbsp;  Zhiwen Fan  &nbsp;&nbsp; Yue Huang  &nbsp;&nbsp; Xinghao Ding  &nbsp;&nbsp; John Paisley
@@ -27,104 +61,88 @@ enhanced image without introducing visual artifacts. Secondly, to further improv
 detail layers at different scales. The final result is obtained by adding all pyramid layers with a weighted strategy. Experiments show that our efficient algorithm generates 
 comparable or even better results with state-of-the-art 1D and 2D histogram based methods.
 
-<!-- <p class="auto-style7"  align="center">
-<p><strong>Paper:</strong>
-<a  href="tip2017.pdf" style="color: blue">[pdf]</a>
-</p> -->
+
 
 <p class="auto-style7"  align="center">
 <p><strong>Matlab code for testing:</strong>
 <a  href="../paper/2018/icassp/Matlab_code.zip" style="color: blue">[Matlab code]</a>
 </p>
 
-<!-- <p class="auto-style7"  align="center">
-<p><strong>Dataset:</strong> Our rainy image dataset is expanded and can be downloaded at 
-<a  href="../cvpr/cvpr2017.html" style="color: blue">here</a>.
-</p> -->
-
-	<table align="center" border="1" width="830" style="border-width: 0px">
-		<tr>
-			<td align="center"  width="300" style="border-style: none; border-width: medium">
-			<font face="Arial" size="6">input images</font></td>
-			<td align="center"  width="300" style="border-style: none; border-width: medium">
-			<font face="Arial" size="6">our results</font></td>
-		</tr>
-
-		<tr>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/72.jpg" width="400"></font></td>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/72 (2).jpg" width="400"></font></td>
-		</tr>
-		<tr>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/227.jpg" width="400"></font></td>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/227 (2).jpg" width="400"></font></td>
-		</tr>
-				
-		<tr>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/198.jpg" width="400"></font></td>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/198 (2).jpg" width="400"></font></td>
-		</tr>
-		<tr>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/208.jpg" width="400"></font></td>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/208 (2).jpg" width="400"></font></td>
-		</tr>
-		
-		<tr>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/215.jpg" width="400"></font></td>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/215 (2).jpg" width="400"></font></td>
-		</tr>
-		
-
-		<tr>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/155.jpg" width="400"></font></td>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/155 (2).jpg" width="400"></font></td>
-		</tr>
-
-				
-		<tr>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/160.jpg" width="400"></font></td>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/160 (2).jpg" width="400"></font></td>
-		</tr>
-				
-		<tr>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/174.jpg" width="400"></font></td>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/174 (2).jpg" width="400"></font></td>
-		</tr>
-		
-		<tr>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/188.jpg" width="400"></font></td>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/188 (2).jpg" width="400"></font></td>
-		</tr>
-		
-				
-		<tr>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/159.jpg" width="400"></font></td>
-			<td align="center"  style="border-style: none; border-width: medium">
-			<img src="../paper/2018/icassp/img/159 (2).jpg" width="400"></font></td>
-		</tr>
-		</table>
+<p class="auto-style7"  align="center">
+<strong>More results</strong> (slide <img src="../js/handle.png" style="width: 15px; height: 15px;"/> for comparison )
+</p>
 
 
+<div id="container" >
+<div><img alt="before" src="../paper/2018/icassp/img/227.jpg" width="500" height="500" /></div>
+<div><img alt="after" src="../paper/2018/icassp/img/227 (2).jpg" width="500" height="500" /></div>
+</div>
 
-   
+<br>
+
+<div id="container1" >
+<div><img alt="before" src="../paper/2018/icassp/img/72.jpg" width="500" height="500" /></div>
+<div><img alt="after" src="../paper/2018/icassp/img/72 (2).jpg" width="500" height="500" /></div>
+</div>
+
+<br>
+
+<div id="container2" >
+<div><img alt="before" src="../paper/2018/icassp/img/215.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/icassp/img/215 (2).jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+<div id="container3" >
+<div><img alt="before" src="../paper/2018/icassp/img/198.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/icassp/img/198 (2).jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+<div id="container4" >
+<div><img alt="before" src="../paper/2018/icassp/img/208.jpg" width="500" height="400" /></div>
+<div><img alt="after" src="../paper/2018/icassp/img/208 (2).jpg" width="500" height="400" /></div>
+</div>
+
+<br>
+
+<div id="container5" >
+<div><img alt="before" src="../paper/2018/icassp/img/155.jpg" width="500" height="330" /></div>
+<div><img alt="after" src="../paper/2018/icassp/img/155 (2).jpg" width="500" height="330" /></div>
+</div>
+
+<br>
+
+<div id="container6" >
+<div><img alt="before" src="../paper/2018/icassp/img/160.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/icassp/img/160 (2).jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+<div id="container7" >
+<div><img alt="before" src="../paper/2018/icassp/img/174.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/icassp/img/174 (2).jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+<div id="container8" >
+<div><img alt="before" src="../paper/2018/icassp/img/188.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/icassp/img/188 (2).jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+<div id="container9" >
+<div><img alt="before" src="../paper/2018/icassp/img/159.jpg" width="500" height="500" /></div>
+<div><img alt="after" src="../paper/2018/icassp/img/159 (2).jpg" width="500" height="500" /></div>
+</div>
+
+<br>
+
    
 </body>
 </html>
