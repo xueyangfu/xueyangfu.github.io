@@ -5,6 +5,21 @@
 <title>Removing rain from single images via a deep detail network</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="../js/jquery.beforeafter-1.4.js"></script>
+<script type="text/javascript">
+$(function(){
+$('#container').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container1').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+});
+</script>
+<style type="text/css">
+#container {margin-left:auto;margin-right:auto;} #container + div.balinks {margin: 0 auto;}
+#container1 {margin-left:auto;margin-right:auto;} #container1 + div.balinks {margin: 0 auto;}
+</style>
+
 </head>
 
 <body leftmargin="40" text="#444444" link="#444444" bgcolor="#FFFFFF">
@@ -53,6 +68,19 @@ in terms of both qualitative and quantitative measures. We discuss applications 
 </br>
 <p><strong>Framework:</strong></a></p>
 <img src="../paper/2017/cvpr/framework.JPG"  height="180px" width="1400px" ><br>
+
+</br>
+<div id="container" >
+<div><img alt="before" src="../paper/2017/cvpr/1.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2017/cvpr/1proposed.jpg" width="500" height="350" /></div>
+</div>
+
+</br>
+<div id="container1" >
+<div><img alt="before" src="../paper/2017/cvpr/2.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2017/cvpr/2proposed.jpg" width="500" height="350" /></div>
+</div>
+
 
 
 </body>
