@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Image enhancement via log-modified histogram equalization and laplacian pyramid</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="../js/jquery.beforeafter-1.4.js"></script>
+<script type="text/javascript">
+$(function(){
+$('#container').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container1').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container2').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container3').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container4').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container5').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container6').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container7').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container8').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container9').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container10').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container11').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container12').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+$('#container13').beforeAfter({imagePath:'../js/',beforeLinkText:'input',afterLinkText:'output'});
+});
+</script>
+
+<style type="text/css">
+#container {margin-left:auto;margin-right:auto;} #container + div.balinks {margin: 0 auto;}
+#container1 {margin-left:auto;margin-right:auto;} #container1 + div.balinks {margin: 0 auto;}
+#container2 {margin-left:auto;margin-right:auto;} #container2 + div.balinks {margin: 0 auto;}
+#container3 {margin-left:auto;margin-right:auto;} #container3 + div.balinks {margin: 0 auto;}
+#container4 {margin-left:auto;margin-right:auto;} #container4 + div.balinks {margin: 0 auto;}
+#container5 {margin-left:auto;margin-right:auto;} #container5 + div.balinks {margin: 0 auto;}
+#container6 {margin-left:auto;margin-right:auto;} #container6 + div.balinks {margin: 0 auto;}
+#container7 {margin-left:auto;margin-right:auto;} #container7 + div.balinks {margin: 0 auto;}
+#container8 {margin-left:auto;margin-right:auto;} #container8 + div.balinks {margin: 0 auto;}
+#container9 {margin-left:auto;margin-right:auto;} #container9 + div.balinks {margin: 0 auto;}
+#container10 {margin-left:auto;margin-right:auto;} #container10 + div.balinks {margin: 0 auto;}
+#container11 {margin-left:auto;margin-right:auto;} #container11 + div.balinks {margin: 0 auto;}
+#container12 {margin-left:auto;margin-right:auto;} #container12 + div.balinks {margin: 0 auto;}
+#container13 {margin-left:auto;margin-right:auto;} #container13 + div.balinks {margin: 0 auto;}
+</style>
+
+</head>
+
+<body leftmargin="40" text="#444444" bgcolor="#FFFFFF">
+
+<div id="top_arrow" style="position: fixed; bottom: 10px; right: 10px;">
+<a href="#title">
+<img src="../js/top_arrow.jpg" style="border: 0pt none ; width: 26px; height: 32px;"/></a>
+</div>
+
+<h2 id="title" class="auto-style1" align="center">Image enhancement via log-modified histogram equalization and Laplacian pyramid</h2>
+
+<p class="auto-style7"  align="center">
+Xueyang Fu &nbsp;&nbsp;  Borong Liang  &nbsp;&nbsp; Yue Huang  &nbsp;&nbsp; Xinghao Ding
+
+
+<p style="text-align: justify;line-height:25px"><strong>Abstract:</strong>  In this paper, a simple yet effective image enhancement algorithm is proposed to improve both 
+global contrast and local details. Firstly, in the classic histogram equalization framework, the global contrast enhancement is achieved by simply modifying the image histogram 
+with logarithmic operation. Due to the character of compression and monotonically increasing of logarithm, the improved histogram equalization can generate naturally looking global 
+enhanced image without introducing visual artifacts. Secondly, to further improve local details, we adopt the Laplacian pyramid to decompose the global enhanced image into several 
+detail layers at different scales. The final result is obtained by adding all pyramid layers with a weighted strategy. Experiments show that our efficient algorithm generates 
+comparable or even better results with state-of-the-art 1D and 2D histogram based methods.
+
+
+
+<p class="auto-style7"  align="center">
+<p><strong>Matlab code for testing:</strong>
+<a  href="../paper/2018/spl/Matlab_code.zip" style="color: blue">[Matlab code]</a>
+</p>
+
+<p class="auto-style7"  align="center">
+<strong>More results</strong> (slide <img src="../js/handle.png" style="width: 15px; height: 15px;"/> for comparison )
+</p>
+
+
+<div id="container" >
+<div><img alt="before" src="../paper/2018/spl/img/227.jpg" width="500" height="500" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/227 (2).jpg" width="500" height="500" /></div>
+</div>
+
+<br>
+
+<div id="container1" >
+<div><img alt="before" src="../paper/2018/spl/img/72.jpg" width="500" height="500" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/72 (2).jpg" width="500" height="500" /></div>
+</div>
+
+<br>
+
+<div id="container2" >
+<div><img alt="before" src="../paper/2018/spl/img/215.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/215 (2).jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+<div id="container3" >
+<div><img alt="before" src="../paper/2018/spl/img/198.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/198 (2).jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+<div id="container4" >
+<div><img alt="before" src="../paper/2018/spl/img/208.jpg" width="500" height="400" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/208 (2).jpg" width="500" height="400" /></div>
+</div>
+
+<br>
+
+<div id="container5" >
+<div><img alt="before" src="../paper/2018/spl/img/155.jpg" width="500" height="330" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/155 (2).jpg" width="500" height="330" /></div>
+</div>
+
+<br>
+
+<div id="container6" >
+<div><img alt="before" src="../paper/2018/spl/img/160.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/160 (2).jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+<div id="container7" >
+<div><img alt="before" src="../paper/2018/spl/img/174.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/174 (2).jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+<div id="container8" >
+<div><img alt="before" src="../paper/2018/spl/img/188.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/188 (2).jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+<div id="container9" >
+<div><img alt="before" src="../paper/2018/spl/img/159.jpg" width="500" height="500" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/159 (2).jpg" width="500" height="500" /></div>
+</div>
+
+<br>
+
+<p class="auto-style7"  align="center">
+<strong>Joint color correction and enhancement</strong>
+</p>
+
+<div id="container10" >
+<div><img alt="before" src="../paper/2018/spl/img/color2.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/color2_res.jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+
+<div id="container11" >
+<div><img alt="before" src="../paper/2018/spl/img/color3.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/color3_res.jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+
+<div id="container12" >
+<div><img alt="before" src="../paper/2018/spl/img/color4.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/color4_res.jpg" width="500" height="350" /></div>
+</div>
+
+<br>
+
+<div id="container13" >
+<div><img alt="before" src="../paper/2018/spl/img/color1.jpg" width="500" height="350" /></div>
+<div><img alt="after" src="../paper/2018/spl/img/color1_res.jpg" width="500" height="350" /></div>
+</div>
+
+
+</body>
+</html>
